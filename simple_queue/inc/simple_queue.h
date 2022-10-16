@@ -8,3 +8,9 @@
  * @copyright Copyright (c) 2022
  * 
  */
+
+typedef struct SimleQueue
+{
+    __UINT8_TYPE__ *buff;
+    __UINT32_TYPE__ pos;
+};
