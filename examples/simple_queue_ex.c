@@ -22,7 +22,7 @@ void main() {
         QueueWrite(&s_queue, i);
     }
 
-    for (int i = 0; i < 23; i++) {
+    for (int i = 0; i < 10; i++) {
         printf("%d\n", QueueRead(&s_queue));
     }
 }
