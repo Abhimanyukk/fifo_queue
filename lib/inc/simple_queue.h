@@ -17,5 +17,5 @@ typedef struct SimleQueue {
 } simple_queue_t;
 
 void SimpleQueueInit(simple_queue_t *queue_p, __UINT32_TYPE__ len);
-void QueueWrite(simple_queue_t *queue_p, __UINT8_TYPE__ data);
-__UINT8_TYPE__ QueueRead(simple_queue_t *queue_p);
+void SimpleQueueWrite(simple_queue_t *queue_p, __UINT8_TYPE__ data);
+__UINT8_TYPE__ SimpleQueueRead(simple_queue_t *queue_p);

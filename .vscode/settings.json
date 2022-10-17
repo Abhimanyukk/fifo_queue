@@ -1,5 +1,8 @@
 {
   "cSpell.words": [
     "Abhimanyu"
-  ]
+  ],
+  "files.associations": {
+    "ring_queue.h": "c"
+  }
 }

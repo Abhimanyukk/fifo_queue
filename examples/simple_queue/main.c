@@ -10,7 +10,6 @@
  */
 
 #include <stdio.h>
-
 #include "simple_queue.h"
 
 
@@ -19,10 +18,10 @@ void main() {
     simple_queue_t s_queue;
     SimpleQueueInit(&s_queue, 100);
     for (int i = 0; i < 10; i++) {
-        QueueWrite(&s_queue, i);
+        SimpleQueueWrite(&s_queue, i);
     }
 
     for (int i = 0; i < 10; i++) {
-        printf("%d\n", QueueRead(&s_queue));
+        printf("%d\n", SimpleQueueRead(&s_queue));
     }
 }
