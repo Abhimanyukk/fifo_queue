@@ -17,12 +17,12 @@ void SimpleQueueInit(simple_queue_t *queue_p, __UINT32_TYPE__ len)
     queue_p->pos = 0;
 }
 
-void QueueWrite(simple_queue_t *queue_p, __UINT8_TYPE__ data)
+void SimpleQueueWrite(simple_queue_t *queue_p, __UINT8_TYPE__ data)
 {
     queue_p->buff[queue_p->pos++] = data;
 }
 
-__UINT8_TYPE__ QueueRead(simple_queue_t *queue_p)
+__UINT8_TYPE__ SimpleQueueRead(simple_queue_t *queue_p)
 {   
     if (queue_p->pos > 0) {
         __UINT8_TYPE__ ret = queue_p->buff[0];
