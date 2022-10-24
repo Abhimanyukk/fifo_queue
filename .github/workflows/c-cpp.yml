@@ -6,12 +6,18 @@ on:
   pull_request:
     branches: [ "main" ]
 
-stages:
-- stage: Build
-  jobs:
-    - job: Build
-      runs-on: ubuntu-latest
+jobs:
+  build:
 
-      steps:
-      - name: make
-        run: make
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+#     - name: configure
+#       run: ./configure
+    - name: make
+      run: make
+    - name: make check
+      run: make check
+    - name: make distcheck
+      run: make distcheck
