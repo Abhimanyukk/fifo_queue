@@ -6,11 +6,12 @@ on:
   pull_request:
     branches: [ "main" ]
 
-jobs:
-  build:
+stages:
+- stage: Build
+  jobs:
+    - job: Build
+      runs-on: ubuntu-latest
 
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: make
-      run: make
+      steps:
+      - name: make
+        run: make
