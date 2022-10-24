@@ -1,7 +1,7 @@
 INCLUDES = ../../lib/inc
-SRCS	= ../../lib/src/*.c
-MAIN = main.c
-CC = gcc
+SRCS	= ../../lib/src/*.cpp
+MAIN = main.cpp
+CC = g++
 EXE = bin
 
 all:
