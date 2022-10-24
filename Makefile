@@ -1,5 +1,3 @@
-# cd examples/ring_queue; make
-# cd $$number;
 CURR_DIR = $(shell pwd)
 
 all:
