@@ -14,6 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: make
-      run: |
-        cd examples/simple_queue/ 
-        make
+      run: make
