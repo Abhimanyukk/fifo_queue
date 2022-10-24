@@ -5,8 +5,7 @@ CC = g++
 EXE = bin
 
 all:
-	$(CC) -o $(EXE) $(MAIN) $(SRCS) -I $(INCLUDES)
+	@$(CC) -o $(EXE) $(MAIN) $(SRCS) -I $(INCLUDES)
 
 clean:
-	@echo "Cleaning"
-	rm $(EXE)
+	@rm -f $(EXE)
