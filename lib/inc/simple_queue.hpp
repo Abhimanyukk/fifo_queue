@@ -13,5 +13,4 @@ public:
     __INT32_TYPE__ Read(void);
 };
 
-
 #endif /* _SIMPLE_QUEUE_HPP_ */

@@ -9,6 +9,9 @@
  * 
  */
 
+#ifndef _RING_QUEUE_H_
+#define _RING_QUEUE_H_
+
 #include <stdlib.h>
 
 typedef struct RingQueue
@@ -22,3 +25,5 @@ typedef struct RingQueue
 void RingQueueInit(ring_queue_t *queue_p, __UINT32_TYPE__ len);
 void RingQueueWrite(ring_queue_t *queue_p, __UINT8_TYPE__ data);
 __UINT8_TYPE__ RingQueueRead(ring_queue_t *queue_p);
+
+#endif /* _RING_QUEUE_H_ */

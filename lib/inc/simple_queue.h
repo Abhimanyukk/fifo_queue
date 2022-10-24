@@ -9,6 +9,9 @@
  * 
  */
 
+#ifndef _SIMPLE_QUEUE_H_
+#define _SIMPLE_QUEUE_H_
+
 #include <stdlib.h>
 
 typedef struct SimleQueue {
@@ -19,3 +22,5 @@ typedef struct SimleQueue {
 void SimpleQueueInit(simple_queue_t *queue_p, __UINT32_TYPE__ len);
 void SimpleQueueWrite(simple_queue_t *queue_p, __UINT8_TYPE__ data);
 __UINT8_TYPE__ SimpleQueueRead(simple_queue_t *queue_p);
+
+#endif /* _SIMPLE_QUEUE_H_ */
